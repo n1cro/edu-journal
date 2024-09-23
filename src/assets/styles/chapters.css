@@ -1,0 +1,70 @@
+.chapters_item-card {
+  background-color: #FFF;
+}
+
+.chapters_title > span {
+  display: block;
+  font-weight: 400;
+}
+
+.chapters_item {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: max-content;
+  gap: 1.5rem;
+}
+.chapters_item:not(:last-child) {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 0.125rem solid var(--card-color);
+}
+.chapters_item-card:nth-child(1) {
+  grid-row: span 2 / span 2;
+}
+.chapters_item-card:nth-child(2) {
+  grid-column: span 3 / span 3;
+  grid-row: span 2 / span 2;
+}
+.chapters_item-card:nth-child(3) {
+  grid-column: span 3 / span 3;
+}
+.chapters_item-card:nth-child(4) {
+  grid-column: span 3 / span 3;
+  grid-column-start: 5;
+}
+
+.chapters_item-title {
+  padding: 1.5rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--title-color);
+  color: #FFF;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.chapters_item-title span {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .chapters_item-card {
+    margin-bottom: 1.5rem;
+  }
+
+  .chapters_item {
+    display: block;
+  }
+  .chapters_item:not(:last-child) {
+    padding-bottom: 1rem
+  }
+
+  .chapters_item-title span {
+    display: none;
+  }
+}

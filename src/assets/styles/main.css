@@ -1,0 +1,10 @@
+@import '@csstools/normalize.css';
+
+@import '_fonts.css';
+@import '_common.css';
+@import 'promo.css';
+@import 'advantages.css';
+@import 'chapters.css';
+@import 'results.css';
+@import 'offer.css';
+@import 'faq.css';

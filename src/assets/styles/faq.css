@@ -1,0 +1,39 @@
+.faq_title {
+  text-align: center;
+}
+
+.faq_items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 1rem;
+}
+
+.faq_text {
+  margin: 0;
+  margin-top: 4rem;
+  padding: 0 30%;
+
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.faq a {
+  color: inherit;
+}
+
+@media (max-width: 768px) {
+  .faq_items {
+    display: block;
+    padding-right: 0;
+    text-align: left;
+  }
+  .faq_items-item {
+    margin-bottom: 1rem;
+  }
+
+  .faq_text {
+    margin-top: 2rem;
+    padding: 0;
+  }
+}

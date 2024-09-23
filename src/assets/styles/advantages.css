@@ -1,0 +1,29 @@
+.advantages_list {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1.5fr 1fr;
+  gap: 1.5rem;
+}
+
+.advantages_list-item {
+  background-color: #fff;
+  padding-right: 10%;
+}
+
+.advantages_list-item:nth-child(n-5) {
+  grid-column: span 3;
+}
+.advantages_list-item:nth-child(n+5) {
+  grid-column: span 4;
+}
+
+@media (max-width: 768px) {
+  .advantages_list {
+    display: block;
+  }
+
+  .advantages_list-item {
+    margin-bottom: 1.5rem;
+    padding-right: 15%;
+  }
+}

@@ -1,0 +1,99 @@
+.offer {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.offer_list {
+  padding: var(--section-gap);
+  width: 50%;
+}
+
+.offer_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 3.2rem;
+}
+.offer_title span {
+  padding: 0 1.5rem;
+
+  border: 0.18rem solid var(--title-color);
+  border-radius: var(--card-radius);
+  font-size: 3.5rem;
+}
+
+.offer_list-item {
+  padding: 1.3rem;
+  margin-bottom: 1rem;
+
+  background-color: #FFF;
+}
+
+.offer_button-wrapper {
+  display: flex;
+  width: 50%;
+
+  background: url('../images/offer-background.jpg') center no-repeat;
+  background-size: contain;
+  background-color: #24625D;
+}
+
+.offer_button {
+  align-self: end;
+
+  margin: 0 auto 5rem;
+  width: 60%;
+
+  background: #FFF;
+  color: #000;
+  box-shadow: -0.05rem 0.1rem 1rem 0 rgba(255,255,255,0.5);
+  transition: box-shadow ease 0.2s;
+}
+.offer_button:hover {
+  box-shadow: -0.05rem 0.1rem 1.5rem 0 rgba(255,255,255,0.5);
+}
+
+@media (max-width: 768px) {
+  .offer {
+    padding: var(--section-gap);
+    display: block;
+  }
+  
+  .offer_list {
+    padding: 0;
+    width: 100%;
+  }
+
+  .offer_title {
+    font-size: 2.5rem;
+  }
+  .offer_title span {
+    padding: 0.3rem 0.6rem;
+    font-size: inherit;
+  }
+
+  .offer_list-item {
+    padding: var(--card-padding);
+  }
+
+  .offer_button-wrapper {
+    padding-top: 17rem;
+    width: 100%;
+    display: flex;
+
+    background: url('../images/journal.png') top center no-repeat;
+    background-size: contain;
+  }
+
+  .offer_button {
+    margin: 0;
+    padding: 1.5rem 3rem;
+    width: 100%;
+    
+    background: var(--title-color);
+    color: #FFF;
+    box-shadow: none;
+  }
+}
