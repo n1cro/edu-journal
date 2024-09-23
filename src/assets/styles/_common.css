@@ -34,7 +34,7 @@ html {
 
   :root {
     --card-radius: 1rem;
-    --section-gap: 3rem 2rem 2.5rem;
+    --section-gap: 2rem 2.5rem;
   }
 }
 @media (max-width: 576px) {
