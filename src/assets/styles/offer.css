@@ -6,6 +6,7 @@
 
 .offer_list {
   padding: var(--section-gap);
+  padding-right: 5rem;
   width: 50%;
 }
 
@@ -32,8 +33,10 @@
 }
 
 .offer_button-wrapper {
-  display: flex;
+  padding: 0 8rem;
   width: 50%;
+  gap: 1.5rem;
+  display: flex;
 
   background: url('../images/offer-background.jpg') center no-repeat;
   background-size: contain;
@@ -44,7 +47,7 @@
   align-self: end;
 
   margin: 0 auto 5rem;
-  width: 60%;
+  width: 100%;
 
   background: #FFF;
   color: #000;
@@ -79,9 +82,9 @@
   }
 
   .offer_button-wrapper {
-    padding-top: 17rem;
+    padding-top: 60vw;
     width: 100%;
-    display: flex;
+    flex-direction: column;
 
     background: url('../images/journal.png') top center no-repeat;
     background-size: contain;
@@ -89,6 +92,7 @@
 
   .offer_button {
     margin: 0;
+    margin-bottom: 1.5rem;
     padding: 1.5rem 3rem;
     width: 100%;
     

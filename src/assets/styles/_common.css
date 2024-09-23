@@ -10,7 +10,7 @@
   --card-color: #D3D9D5;
 
   --card-radius: 0.7rem;
-  --section-gap: 5rem 8.5rem;
+  --section-gap: 5rem 17rem;
 }
 
 html {
@@ -20,6 +20,10 @@ html {
 @media (max-width: 1440px) {
   html {
     font-size: calc(100vw / 1920 * 16);
+  }
+
+  :root {
+    --section-gap: 5rem 10rem;
   }
 }
 
@@ -70,7 +74,6 @@ body,
 
 section {
   padding: var(--section-gap);
-  padding-right: 20rem;
 }
 .section-title {
   margin: 0;
