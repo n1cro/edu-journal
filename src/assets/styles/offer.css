@@ -82,6 +82,7 @@
   }
 
   .offer_button-wrapper {
+    padding: 0;
     padding-top: 60vw;
     width: 100%;
     flex-direction: column;
