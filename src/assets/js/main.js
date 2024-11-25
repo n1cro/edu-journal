@@ -16,3 +16,7 @@ triggers.forEach((trigger) => {
     }
   });
 });
+
+window.scrollToBlock = function scrollToBlock(blockId) {
+  document.getElementById(blockId).scrollIntoView({ behavior: "smooth" });
+};

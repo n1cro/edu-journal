@@ -9,13 +9,24 @@
   gap: 1rem;
 }
 
-.faq_text {
-  margin: 0;
+.faq_privacy-wrapper {
   margin-top: 4rem;
-  padding: 0 30%;
 
-  font-size: 0.8rem;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.faq_privacy {
+  padding-right: 0%;
+  width: 50%;
+}
+
+.faq_privacy-text {
+  margin: 0;
+  margin-bottom: 1rem;
+
+  font-size: 0.9rem;
 }
 
 .faq a {
@@ -32,8 +43,7 @@
     margin-bottom: 1rem;
   }
 
-  .faq_text {
-    margin: 2rem 0;
-    padding: 0;
+  .faq_privacy-text {
+    font-size: 0.8rem;
   }
 }
